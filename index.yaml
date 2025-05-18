@@ -1,0 +1,56 @@
+apiVersion: v1
+entries:
+  nginx:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: git
+          image: docker.io/bitnami/git:2.49.0-debian-12-r6
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.28.0-debian-12-r0
+        - name: nginx-exporter
+          image: docker.io/bitnami/nginx-exporter:1.4.2-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.28.0
+    created: "2025-05-18T09:07:15.0953967-05:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: bd3afd73b9e880f13b91c1b25a3e14c0af183b0f8f0344aa7c872cdf8efe2d4c
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/nginx
+    urls:
+    - nginx-20.0.2.tgz
+    version: 20.0.2
+  payments:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-05-18T09:07:15.0959149-05:00"
+    description: A Helm chart for Kubernetes
+    digest: b70ae80aed240e6d6f576ce7b672b7f3f8708d8507927f403c71fa1b9b28ed2e
+    name: payments
+    type: application
+    urls:
+    - payments-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-05-18T09:07:15.0927643-05:00"
